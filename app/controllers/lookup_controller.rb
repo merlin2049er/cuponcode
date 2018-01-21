@@ -1,11 +1,12 @@
 class LookupController < ApplicationController
 
-  def index
+  def search
 
 
   end
 
-  def search
+  def index
+    @result = ''
 
     respond_to do |format|
       format.html do
@@ -13,7 +14,7 @@ class LookupController < ApplicationController
           @result = @cupon.comment
           format.html { redirect_to('lookup#search', :notice => @result) }
         else
-          @result = "That does not apply!"
+          @result = "Enter a valid code..."
           format.html { redirect_to('lookup#search', :notice => @result) }
 
         end
