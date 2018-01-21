@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  comment: MyString
+  valid: false
+  start: 2018-01-21 11:50:48
+  end: 2018-01-21 11:50:48
+  value: 1.5
+
+two:
+  code: MyString
+  comment: MyString
+  valid: false
+  start: 2018-01-21 11:50:48
+  end: 2018-01-21 11:50:48
+  value: 1.5

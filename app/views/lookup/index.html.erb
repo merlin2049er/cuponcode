@@ -1,0 +1,11 @@
+<p id="notice"><%= @result %></p>
+
+<h3>Apply Cupon code here...</h3>
+
+
+<%= form_tag("/search", method: "get")  do %>
+
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Apply") %>
+<% end %>
+
